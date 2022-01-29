@@ -1,0 +1,205 @@
+body{
+    background: #444444;
+    font-family: 'Source Serif 4', sans-serif;
+}
+header .nav{
+    min-height: 80px;
+    overflow: hidden;
+    background: #fff;
+}
+header .logo h2,
+header .logo p{
+    font-size: 16px;
+    display: inline-block;
+}
+header .logo .icono{
+    color:#660000;
+
+}
+header .logo svg{
+    width: 20px;
+    height: 20px;
+}
+header logo p{
+    color: #777777;
+}
+img{
+    height: 400px;
+}
+header .menu .color1{
+    background: #3da5e2;
+}
+header .menu .color2{
+    background: #2481b8;
+}
+header .menu .color3{
+    background: #0d557e;
+}
+header .menu .color1:hover{
+    background: #57a4d1;
+}
+header .menu .color2:hover{
+    background: #2678a8;
+}
+header .menu .color3:hover{
+    background: #06476d;
+}
+/*MAIN*/
+
+/* Portafolio */
+.portafolio{
+    border-top: 5px solid #3da5e2;
+    background: #fff;
+}
+.portafolio .titulo{
+    color: #3da5e2b9;
+    font-family: 'Source Serif 4', sans-serif;
+    font-weight: 300;
+}
+.portafolio .galeria .contenedor-imagen{
+    max-height: 240px;
+    overflow: hidden;
+}
+.portafolio .galeria .contenedor-imagen a{
+    background: #3da5e2;
+    display: inline-block;
+}
+.portafolio .galeria .contenedor-imagen:hover{
+    opacity: .6;
+}
+/* Ventana Modal */
+.modal-dialog{
+    max-width: 90%;
+    min-width: 50%;
+}
+.acerca-de .foto .nombre{
+    color: #444444;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.acerca-de .info .titulo{
+    color: darkred;
+    font-family: 'Source Serif 4', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.acerca-de .info .resumen{
+    letter-spacing: 1px;
+    color: #444444;
+}
+.acerca-de .info .label{
+    color: darkred;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.acerca-de .info .progress{
+    background: #3da5e2;
+    height: 25px;
+}
+.acerca-de .info .progress .progress-bar{
+    color: black;
+    background: #2481b8;
+    line-height: 25px;
+    padding-left: 20px;
+}
+.contacto{
+    border-top: 1px solid #cbcbcb; 
+    border-bottom: 1px solid #cbcbcb;
+}
+.contacto .titulo{
+    color: darkred;
+    font-family: 'Source Serif 4', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.contacto .formulario input[type="texto"],
+.contacto .formulario input[type="email"],
+.contacto .formulario textarea{
+    padding: 15px;
+    /* border: none; */
+    font-family: 'Source Serif 4', sans-serif;
+}
+.contacto .formulario textarea{
+    height: 150px;
+    min-height: 150px;
+    max-height: 250px;
+}
+.contacto .formulario .boton{
+    background: darkred;
+    border: none;
+    padding: 7px 30px;
+    color:#fff;
+    font-family: 'Source Serif 4', sans-serif;
+    cursor: pointer;
+    width: auto;
+    border-radius: 3px;
+}
+.contacto .formulario .boton:hover{
+    background: rgba(255, 0, 0, 0.801);
+}
+/* Redes Sociales  */
+.redes-sociales{
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+.redes-sociales .icono{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 0px 20px;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all .3s ease;
+    background: gray;
+    color: #fff;
+}
+.redes-sociales .icono svg{
+    width: 40px;
+    height: 40px;
+}
+.redes-sociales .twitter{background: #1da1f2;}
+.redes-sociales .instagram{background: #C13584;}
+.redes-sociales .facebook{background: #3b5998;}
+.redes-sociales .whatsapp{background: #25D366;}
+.redes-sociales .messenger{background: #00B2FF;}
+.redes-sociales .spotify{background: #1DB954;}
+/* Dispositivo lg */
+@media screen and (max-width: 992px) {
+    .logo{
+        height: 76px;
+    }
+    header .menu{
+        min-height: 76px;
+    }
+    header .menu a{
+        width: 100%;
+    }
+    @media screen and (max-width: 576px){
+        .redes-sociales .icono{
+            width: 50px;
+            height: 50px;
+        }
+        .redes-sociales .icono svg{
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .portafolio .galeria .contenedor-imagen:nth-child(1){order:1;}
+    .portafolio .galeria .contenedor-imagen:nth-child(2){order:3;}
+    .portafolio .galeria .contenedor-imagen:nth-child(3){order:6;}
+    .portafolio .galeria .contenedor-imagen:nth-child(4){order:2;}
+    .portafolio .galeria .contenedor-imagen:nth-child(5){order:5;}
+    .portafolio .galeria .contenedor-imagen:nth-child(6){order:4;}
+    .portafolio .galeria .contenedor-imagen:nth-child(7){order:7;}
+}
+/* Dispositivo xl */
+@media screen and (max-width: 1200px) {
+}
+/* Dispositivo xxl */
+@media screen and (max-width: 1400px) {
+}
